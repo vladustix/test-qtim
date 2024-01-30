@@ -1,0 +1,28 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@font-face{
+  font-family: 'TT Commons';
+  src: url('/assets/fonts/TTCommons-Regular.ttf') format('ttf');
+}
+
+body {
+  @apply bg-white text-black font-TTCommons;
+}
+
+h1 {
+  @apply text-[84px] leading-none;
+}
+
+p {
+  @apply text-[20px] leading-[120%];
+}
+
+body {
+  @apply min-h-[100vh];
+}
+
+.container {
+  @apply max-w-[1217px] mx-auto px-8;
+}
