@@ -7,9 +7,9 @@ export const useStoreBlog = defineStore('blog', {
     posts: []
   }),
   actions: {
-    async fetchPosts() {
+    async getPosts() {
       const baseUrl = useRuntimeConfig().public.baseUrl;
-      const { data } = await useFetch(baseUrl + '/posts');
+      const { data } = await useFetch(baseUrl + 'posts');
       this.posts = data.value;
     },
   },
